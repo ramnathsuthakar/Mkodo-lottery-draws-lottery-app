@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DrawDetailViewModel: DrawDetailViewModelProtocol {
+final class DrawDetailViewModel: DrawDetailViewModelProtocol {
     @Published var draw: Draw
     
     init(draw: Draw) {

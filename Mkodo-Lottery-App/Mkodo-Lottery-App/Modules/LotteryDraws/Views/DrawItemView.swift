@@ -52,7 +52,6 @@ struct DrawItemView: View {
     }
 }
 
-
 struct DrawItemView_Previews: PreviewProvider {
     static var previews: some View {
         let draw = Draw(id: "draw-1",

@@ -128,7 +128,6 @@ struct MyTicketView: View {
     }
 }
 
-
 struct MyTicketView_Previews: PreviewProvider {
     static var previews: some View {
         MyTicketView(coordinator: AppCoordinator(), viewModel: MyTicketViewModel(), viewModelDraws: DrawsViewModel())

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DrawDetailContainerViewModel: DrawDetailContainerViewModelProtocol {
+final class DrawDetailContainerViewModel: DrawDetailContainerViewModelProtocol {
     @Published var draws: [Draw]
     @Published var selectedIndex: Int
     

@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct DrawDetailView<ViewModel: DrawDetailViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
     @ObservedObject var coordinator: AppCoordinator

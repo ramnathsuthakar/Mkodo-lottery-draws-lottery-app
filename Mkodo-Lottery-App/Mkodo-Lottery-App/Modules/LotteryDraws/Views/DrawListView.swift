@@ -54,9 +54,6 @@ struct DrawListView: View {
     }
 }
 
-
-
-
 struct DrawListView_Previews: PreviewProvider {
     static var previews: some View {
         DrawListView(viewModel: DrawsViewModel(), coordinator: AppCoordinator())
