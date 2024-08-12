@@ -32,6 +32,7 @@
 		CEEB2B6C2C6A430D008CF23A /* MyTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */; };
 		CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */; };
 		CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B702C6A5945008CF23A /* String+Extensions.swift */; };
+		CEEB2B732C6A5E46008CF23A /* MyTicketViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModel.swift; sourceTree = "<group>"; };
 		CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelProtocol.swift; sourceTree = "<group>"; };
 		CEEB2B702C6A5945008CF23A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				CEEB2B622C6A40F3008CF23A /* LotteryDraws */,
 				CEEB2B5D2C6A4041008CF23A /* IntegrationTests */,
 				CEEB2B5A2C6A400F008CF23A /* Mocks */,
+				CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */,
 			);
 			path = "Mkodo-Lottery-AppTests";
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */,
 				CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */,
 				CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */,
+				CEEB2B732C6A5E46008CF23A /* MyTicketViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

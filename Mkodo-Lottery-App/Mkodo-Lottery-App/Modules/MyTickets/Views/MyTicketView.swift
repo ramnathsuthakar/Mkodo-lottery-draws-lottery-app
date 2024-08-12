@@ -59,7 +59,7 @@ struct MyTicketView: View {
                 .shadow(radius: 5)
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("\(viewModel.localizedGreetingMessage()) \(viewModel.date)")
+                    Text("\(viewModel.localizedGreetingMessage) \(viewModel.date)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     
@@ -87,6 +87,18 @@ struct MyTicketView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.red)
                     
+                    HStack(spacing: 8) {
+                        ForEach(Array(viewModel.buildWinningNumber(draw: viewModelDraws.state.draws.first).enumerated()), id: \.element) { index, number in
+                            Text("\(number)")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .frame(width: 40, height: 40)
+                                .background(index == viewModel.numbers.count - 1 ? Color.blue : Color.orange)
+                                .foregroundColor(.white)
+                                .clipShape(Circle())
+                        }
+                    }
+                    
                     HStack(alignment: .center) {
                         Image("barcodeBig")
                             .resizable()
@@ -106,6 +118,9 @@ struct MyTicketView: View {
         }
         .background(Color(.systemGray6))
         .navigationBarHidden(true)
+        .onAppear {
+            viewModel.generateRandomNumbers()
+        }
         .task {
             viewModelDraws.fetchDraws()
         }

@@ -8,8 +8,14 @@
 import Foundation
 
 protocol MyTicketViewModelProtocol: ObservableObject {
+    
+    // MARK: - Properies
+    
     var numbers: [Int] { get }
     var date: String { get }
+    var localizedGreetingMessage: String { get }
     
-    func localizedGreetingMessage() -> String
+    // MARK: - Methods
+    func generateRandomNumbers()
+    func buildWinningNumber(draw: Draw?) -> [Int]
 }
