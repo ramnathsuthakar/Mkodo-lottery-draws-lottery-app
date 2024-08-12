@@ -10,7 +10,6 @@
 		CEEB2B092C6A2B58008CF23A /* MkodoLotteryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */; };
 		CEEB2B0D2C6A2B59008CF23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */; };
 		CEEB2B102C6A2B59008CF23A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */; };
-		CEEB2B1A2C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B192C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift */; };
 		CEEB2B242C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */; };
 		CEEB2B262C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */; };
 		CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B372C6A3054008CF23A /* HomeView.swift */; };
@@ -25,6 +24,9 @@
 		CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B502C6A3A5B008CF23A /* Request.swift */; };
 		CEEB2B542C6A3BAF008CF23A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B562C6A3BAF008CF23A /* Localizable.strings */; };
 		CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B582C6A3E59008CF23A /* Draws.swift */; };
+		CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */; };
+		CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */; };
+		CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,6 @@
 		CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEB2B152C6A2B59008CF23A /* Mkodo-Lottery-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mkodo-Lottery-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEB2B192C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppTests.swift; sourceTree = "<group>"; };
 		CEEB2B1F2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mkodo-Lottery-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppUITests.swift; sourceTree = "<group>"; };
 		CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -66,6 +67,9 @@
 		CEEB2B502C6A3A5B008CF23A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CEEB2B552C6A3BAF008CF23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEEB2B582C6A3E59008CF23A /* Draws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draws.swift; sourceTree = "<group>"; };
+		CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelSuccessTests.swift; sourceTree = "<group>"; };
+		CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelFailureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,9 @@
 		CEEB2B182C6A2B59008CF23A /* Mkodo-Lottery-AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEEB2B192C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift */,
+				CEEB2B622C6A40F3008CF23A /* LotteryDraws */,
+				CEEB2B5D2C6A4041008CF23A /* IntegrationTests */,
+				CEEB2B5A2C6A400F008CF23A /* Mocks */,
 			);
 			path = "Mkodo-Lottery-AppTests";
 			sourceTree = "<group>";
@@ -262,6 +268,30 @@
 				CEEB2B562C6A3BAF008CF23A /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEEB2B5A2C6A400F008CF23A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CEEB2B5D2C6A4041008CF23A /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		CEEB2B622C6A40F3008CF23A /* LotteryDraws */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */,
+				CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */,
+			);
+			path = LotteryDraws;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,7 +444,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEB2B1A2C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift in Sources */,
+				CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */,
+				CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */,
+				CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
