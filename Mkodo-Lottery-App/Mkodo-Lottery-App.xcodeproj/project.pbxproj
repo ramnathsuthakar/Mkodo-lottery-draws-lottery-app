@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEEB2B092C6A2B58008CF23A /* Mkodo_Lottery_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B082C6A2B58008CF23A /* Mkodo_Lottery_AppApp.swift */; };
-		CEEB2B0B2C6A2B58008CF23A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B0A2C6A2B58008CF23A /* ContentView.swift */; };
+		CEEB2B092C6A2B58008CF23A /* MkodoLotteryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */; };
 		CEEB2B0D2C6A2B59008CF23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */; };
 		CEEB2B102C6A2B59008CF23A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */; };
 		CEEB2B1A2C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B192C6A2B59008CF23A /* Mkodo_Lottery_AppTests.swift */; };
 		CEEB2B242C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */; };
 		CEEB2B262C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */; };
+		CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B372C6A3054008CF23A /* HomeView.swift */; };
+		CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,7 @@
 
 /* Begin PBXFileReference section */
 		CEEB2B052C6A2B58008CF23A /* Mkodo-Lottery-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mkodo-Lottery-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEB2B082C6A2B58008CF23A /* Mkodo_Lottery_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppApp.swift; sourceTree = "<group>"; };
-		CEEB2B0A2C6A2B58008CF23A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MkodoLotteryAppApp.swift; sourceTree = "<group>"; };
 		CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEB2B152C6A2B59008CF23A /* Mkodo-Lottery-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mkodo-Lottery-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		CEEB2B1F2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mkodo-Lottery-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppUITests.swift; sourceTree = "<group>"; };
 		CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEB2B372C6A3054008CF23A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		CEEB2B072C6A2B58008CF23A /* Mkodo-Lottery-App */ = {
 			isa = PBXGroup;
 			children = (
-				CEEB2B082C6A2B58008CF23A /* Mkodo_Lottery_AppApp.swift */,
-				CEEB2B0A2C6A2B58008CF23A /* ContentView.swift */,
+				CEEB2B342C6A2DA3008CF23A /* Modules */,
+				CEEB2B332C6A2D8A008CF23A /* Core */,
+				CEEB2B322C6A2D78008CF23A /* App */,
 				CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */,
 				CEEB2B0E2C6A2B59008CF23A /* Preview Content */,
 			);
@@ -125,6 +128,46 @@
 				CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */,
 			);
 			path = "Mkodo-Lottery-AppUITests";
+			sourceTree = "<group>";
+		};
+		CEEB2B322C6A2D78008CF23A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */,
+				CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEEB2B332C6A2D8A008CF23A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEEB2B342C6A2DA3008CF23A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B352C6A3031008CF23A /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CEEB2B352C6A3031008CF23A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B362C6A3044008CF23A /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEEB2B362C6A3044008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B372C6A3054008CF23A /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEB2B0B2C6A2B58008CF23A /* ContentView.swift in Sources */,
-				CEEB2B092C6A2B58008CF23A /* Mkodo_Lottery_AppApp.swift in Sources */,
+				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
+				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
+				CEEB2B092C6A2B58008CF23A /* MkodoLotteryAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
