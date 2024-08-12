@@ -27,6 +27,10 @@ struct HomeView: View {
                     .aspectRatio(contentMode: .fit)
             }
             .padding()
+            
+            TileView(title: "Lottery Draws", subtitle: "Check our latest draws results", image: "lotteryDrawsImage") {
+                coordinator.navigate(to: .drawDetails)
+            }
 
             Spacer()
         }
