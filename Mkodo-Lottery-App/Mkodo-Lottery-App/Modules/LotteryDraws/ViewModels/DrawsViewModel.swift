@@ -44,9 +44,13 @@ final class DrawsViewModel: DrawsViewModelProtocol {
             guard let self = self else { return }
             switch result {
             case .success(let draws):
-                self.state = .loaded(draws.draws)
+                DispatchQueue.main.async {
+                    self.state = .loaded(draws.draws)
+                }
             case .failure:
-                self.state = .error
+                DispatchQueue.main.async {
+                    self.state = .error
+                }
             }
         }
     }
