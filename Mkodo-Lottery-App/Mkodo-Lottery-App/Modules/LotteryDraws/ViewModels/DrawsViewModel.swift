@@ -24,20 +24,24 @@ enum DrawsViewModelState {
 
 final class DrawsViewModel: DrawsViewModelProtocol {
 
+    // MARK: - Properies
+    
     private let apiManager: APIManaging
-
-    init(apiManager: APIManaging = APIManager()) {
-        self.apiManager = apiManager
-        self.state = .loading
-    }
-
     var updatedState: (() -> Void)?
-
     @Published var state: DrawsViewModelState {
         didSet {
             self.updatedState?()
         }
     }
+    
+    // MARK: - Init
+    
+    init(apiManager: APIManaging = APIManager()) {
+        self.apiManager = apiManager
+        self.state = .loading
+    }
+    
+    // MARK: - Methods
 
     func fetchDraws() {
         apiManager.execute(Draw.drawDetails()) { [weak self] result in

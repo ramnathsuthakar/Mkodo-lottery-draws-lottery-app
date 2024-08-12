@@ -8,7 +8,13 @@
 import Foundation
 
 protocol DrawsViewModelProtocol: ObservableObject {
+    
+    // MARK: - Properies
+    
     var state: DrawsViewModelState { get set }
     var updatedState: (() -> Void)? { get set }
+    
+    // MARK: - Methods
+    
     func fetchDraws()
 }
