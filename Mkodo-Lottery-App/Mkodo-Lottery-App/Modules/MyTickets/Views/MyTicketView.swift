@@ -68,6 +68,7 @@ struct MyTicketView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.red)
                     
+                    // When there is numbers, it will display in the view
                     HStack(spacing: 8) {
                         ForEach(Array(viewModel.numbers.enumerated()), id: \.element) { index, number in
                             Text("\(number)")

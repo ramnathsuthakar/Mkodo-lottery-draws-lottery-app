@@ -33,6 +33,15 @@
 		CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */; };
 		CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B702C6A5945008CF23A /* String+Extensions.swift */; };
 		CEEB2B732C6A5E46008CF23A /* MyTicketViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */; };
+		CEEB2B792C6A6062008CF23A /* DrawDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B782C6A6062008CF23A /* DrawDetailView.swift */; };
+		CEEB2B7B2C6A610B008CF23A /* DrawDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B7A2C6A610B008CF23A /* DrawDetailViewModel.swift */; };
+		CEEB2B7D2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B7C2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift */; };
+		CEEB2B7F2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B7E2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift */; };
+		CEEB2B812C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B802C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift */; };
+		CEEB2B832C6A63ED008CF23A /* DrawDetailContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B822C6A63ED008CF23A /* DrawDetailContainerView.swift */; };
+		CEEB2B862C6A65DF008CF23A /* DrawsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B852C6A65DF008CF23A /* DrawsTests.swift */; };
+		CEEB2B892C6A6624008CF23A /* DrawDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B882C6A6624008CF23A /* DrawDetailsViewModelTests.swift */; };
+		CEEB2B8B2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B8A2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +91,15 @@
 		CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelProtocol.swift; sourceTree = "<group>"; };
 		CEEB2B702C6A5945008CF23A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelTests.swift; sourceTree = "<group>"; };
+		CEEB2B782C6A6062008CF23A /* DrawDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailView.swift; sourceTree = "<group>"; };
+		CEEB2B7A2C6A610B008CF23A /* DrawDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B7C2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B7E2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B802C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B822C6A63ED008CF23A /* DrawDetailContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerView.swift; sourceTree = "<group>"; };
+		CEEB2B852C6A65DF008CF23A /* DrawsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsTests.swift; sourceTree = "<group>"; };
+		CEEB2B882C6A6624008CF23A /* DrawDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		CEEB2B8A2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,10 +171,11 @@
 		CEEB2B182C6A2B59008CF23A /* Mkodo-Lottery-AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEEB2B872C6A660C008CF23A /* DrawDetails */,
+				CEEB2B842C6A65A2008CF23A /* MyTickets */,
 				CEEB2B622C6A40F3008CF23A /* LotteryDraws */,
 				CEEB2B5D2C6A4041008CF23A /* IntegrationTests */,
 				CEEB2B5A2C6A400F008CF23A /* Mocks */,
-				CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */,
 			);
 			path = "Mkodo-Lottery-AppTests";
 			sourceTree = "<group>";
@@ -191,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEB2B652C6A4267008CF23A /* MyTickets */,
+				CEEB2B742C6A6009008CF23A /* DrawDetails */,
 				CEEB2B3D2C6A35F9008CF23A /* LotteryDraws */,
 				CEEB2B352C6A3031008CF23A /* Home */,
 			);
@@ -306,6 +326,7 @@
 			children = (
 				CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */,
 				CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */,
+				CEEB2B852C6A65DF008CF23A /* DrawsTests.swift */,
 			);
 			path = LotteryDraws;
 			sourceTree = "<group>";
@@ -350,6 +371,60 @@
 				CEEB2B702C6A5945008CF23A /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEEB2B742C6A6009008CF23A /* DrawDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B772C6A6032008CF23A /* Interfaces */,
+				CEEB2B762C6A602A008CF23A /* ViewModels */,
+				CEEB2B752C6A6022008CF23A /* Views */,
+			);
+			path = DrawDetails;
+			sourceTree = "<group>";
+		};
+		CEEB2B752C6A6022008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B782C6A6062008CF23A /* DrawDetailView.swift */,
+				CEEB2B822C6A63ED008CF23A /* DrawDetailContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B762C6A602A008CF23A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B7A2C6A610B008CF23A /* DrawDetailViewModel.swift */,
+				CEEB2B7E2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEB2B772C6A6032008CF23A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B7C2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift */,
+				CEEB2B802C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEEB2B842C6A65A2008CF23A /* MyTickets */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */,
+			);
+			path = MyTickets;
+			sourceTree = "<group>";
+		};
+		CEEB2B872C6A660C008CF23A /* DrawDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B882C6A6624008CF23A /* DrawDetailsViewModelTests.swift */,
+				CEEB2B8A2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift */,
+			);
+			path = DrawDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,11 +559,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */,
+				CEEB2B7B2C6A610B008CF23A /* DrawDetailViewModel.swift in Sources */,
 				CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */,
 				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
 				CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */,
+				CEEB2B832C6A63ED008CF23A /* DrawDetailContainerView.swift in Sources */,
+				CEEB2B7F2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift in Sources */,
+				CEEB2B812C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift in Sources */,
 				CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */,
+				CEEB2B7D2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift in Sources */,
 				CEEB2B6A2C6A42A3008CF23A /* MyTicketView.swift in Sources */,
+				CEEB2B792C6A6062008CF23A /* DrawDetailView.swift in Sources */,
 				CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */,
 				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
 				CEEB2B6C2C6A430D008CF23A /* MyTicketViewModel.swift in Sources */,
@@ -509,8 +590,11 @@
 				CEEB2B642C6A413C008CF23A /* APIManagerTests.swift in Sources */,
 				CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */,
 				CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */,
+				CEEB2B862C6A65DF008CF23A /* DrawsTests.swift in Sources */,
 				CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */,
+				CEEB2B8B2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift in Sources */,
 				CEEB2B732C6A5E46008CF23A /* MyTicketViewModelTests.swift in Sources */,
+				CEEB2B892C6A6624008CF23A /* DrawDetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

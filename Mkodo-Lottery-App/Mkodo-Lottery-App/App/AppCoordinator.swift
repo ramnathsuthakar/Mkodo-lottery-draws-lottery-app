@@ -14,6 +14,7 @@ class AppCoordinator: ObservableObject {
         case home
         case drawDetails
         case myTickets
+        case drawDetailContainer(draws: [Draw], selectedIndex: Int)
     }
     
     func navigate(to view: AppView) {

@@ -39,7 +39,7 @@ struct DrawListView: View {
                     ForEach(Array(viewModel.state.draws.enumerated()), id: \.element) { (index, draw) in
                         DrawItemView(draw: draw)
                             .onTapGesture {
-                                // Need to add new screen to show the full view
+                                coordinator.navigate(to: .drawDetailContainer(draws: viewModel.state.draws, selectedIndex: index))
                             }
                     }
                 }

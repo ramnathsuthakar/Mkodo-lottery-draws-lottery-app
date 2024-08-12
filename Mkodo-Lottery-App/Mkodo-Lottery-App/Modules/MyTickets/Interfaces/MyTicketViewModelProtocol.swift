@@ -16,6 +16,7 @@ protocol MyTicketViewModelProtocol: ObservableObject {
     var localizedGreetingMessage: String { get }
     
     // MARK: - Methods
+    
     func generateRandomNumbers()
     func buildWinningNumber(draw: Draw?) -> [Int]
 }

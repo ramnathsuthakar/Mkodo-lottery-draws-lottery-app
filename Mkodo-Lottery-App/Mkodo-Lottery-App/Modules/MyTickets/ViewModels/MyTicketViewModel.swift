@@ -9,6 +9,8 @@ import Foundation
 
 final class MyTicketViewModel: MyTicketViewModelProtocol {
 
+    // MARK: - Properies
+    
     @Published var numbers: [Int] = []
     var date: String {
         let dateFormatter = DateFormatter()
@@ -19,6 +21,8 @@ final class MyTicketViewModel: MyTicketViewModelProtocol {
     var localizedGreetingMessage: String {
         "my.tickets.greeting.message".localized
     }
+    
+    // MARK: - Methods
     
     /*
      // Generate 6 unique random number between 1 to 59
