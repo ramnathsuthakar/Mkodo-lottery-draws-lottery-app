@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  Mkodo-Lottery-App
+
+  Created by Ramanath Suthakar on 12/08/2024.
+  
+*/
+
+/**
+ *  Context: Navigation
+ */
+"nav.greeting" = "Welcome back";
+
+/**
+ *  Context: My Tickets
+ */
+"my.tickets.greeting.message" = "Good luck for your draw on";
+"my.tickets.lotto.title" = "Lotto";
+"my.tickets.your.number" = "Your number";
+"my.tickets.winning.number" = "Winning Number";
+
+/**
+ *  Context: Home
+ */
+"home.lottery.draws.title" = "Lottery Draws";
+"home.lottery.draws.description" = "Check our latest draws results";
+"home.my.tickets.title" = "My Tickets";
+"home.my.tickets.description" = "Check your tickets";
+
+/**
+ *  Context: Draw Details
+ */
+"draw.details.top.prize" = "Top Prize";
+"draw.details.draw" = "DRAW";
+
+

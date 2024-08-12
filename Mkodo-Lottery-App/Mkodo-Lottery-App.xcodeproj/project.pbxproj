@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEB2B092C6A2B58008CF23A /* MkodoLotteryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */; };
+		CEEB2B0D2C6A2B59008CF23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */; };
+		CEEB2B102C6A2B59008CF23A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */; };
+		CEEB2B242C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */; };
+		CEEB2B262C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */; };
+		CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B372C6A3054008CF23A /* HomeView.swift */; };
+		CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */; };
+		CEEB2B3C2C6A3226008CF23A /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B3B2C6A3226008CF23A /* TileView.swift */; };
+		CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B3F2C6A361F008CF23A /* DrawListView.swift */; };
+		CEEB2B442C6A3708008CF23A /* DrawsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B432C6A3708008CF23A /* DrawsViewModel.swift */; };
+		CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */; };
+		CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B482C6A377B008CF23A /* Draw.swift */; };
+		CEEB2B4B2C6A3865008CF23A /* DrawItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */; };
+		CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */; };
+		CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B502C6A3A5B008CF23A /* Request.swift */; };
+		CEEB2B542C6A3BAF008CF23A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B562C6A3BAF008CF23A /* Localizable.strings */; };
+		CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B582C6A3E59008CF23A /* Draws.swift */; };
+		CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */; };
+		CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */; };
+		CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */; };
+		CEEB2B642C6A413C008CF23A /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */; };
+		CEEB2B6A2C6A42A3008CF23A /* MyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B692C6A42A3008CF23A /* MyTicketView.swift */; };
+		CEEB2B6C2C6A430D008CF23A /* MyTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */; };
+		CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */; };
+		CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B702C6A5945008CF23A /* String+Extensions.swift */; };
+		CEEB2B732C6A5E46008CF23A /* MyTicketViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */; };
+		CEEB2B792C6A6062008CF23A /* DrawDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B782C6A6062008CF23A /* DrawDetailView.swift */; };
+		CEEB2B7B2C6A610B008CF23A /* DrawDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B7A2C6A610B008CF23A /* DrawDetailViewModel.swift */; };
+		CEEB2B7D2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B7C2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift */; };
+		CEEB2B7F2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B7E2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift */; };
+		CEEB2B812C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B802C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift */; };
+		CEEB2B832C6A63ED008CF23A /* DrawDetailContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B822C6A63ED008CF23A /* DrawDetailContainerView.swift */; };
+		CEEB2B862C6A65DF008CF23A /* DrawsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B852C6A65DF008CF23A /* DrawsTests.swift */; };
+		CEEB2B892C6A6624008CF23A /* DrawDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B882C6A6624008CF23A /* DrawDetailsViewModelTests.swift */; };
+		CEEB2B8B2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B8A2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEB2B162C6A2B59008CF23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEB2AFD2C6A2B58008CF23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEB2B042C6A2B58008CF23A;
+			remoteInfo = "Mkodo-Lottery-App";
+		};
+		CEEB2B202C6A2B59008CF23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEB2AFD2C6A2B58008CF23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEB2B042C6A2B58008CF23A;
+			remoteInfo = "Mkodo-Lottery-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEEB2B052C6A2B58008CF23A /* Mkodo-Lottery-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mkodo-Lottery-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MkodoLotteryAppApp.swift; sourceTree = "<group>"; };
+		CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEEB2B152C6A2B59008CF23A /* Mkodo-Lottery-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mkodo-Lottery-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEB2B1F2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mkodo-Lottery-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppUITests.swift; sourceTree = "<group>"; };
+		CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mkodo_Lottery_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEEB2B372C6A3054008CF23A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CEEB2B3B2C6A3226008CF23A /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		CEEB2B3F2C6A361F008CF23A /* DrawListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawListView.swift; sourceTree = "<group>"; };
+		CEEB2B432C6A3708008CF23A /* DrawsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B482C6A377B008CF23A /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawItemView.swift; sourceTree = "<group>"; };
+		CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CEEB2B502C6A3A5B008CF23A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CEEB2B552C6A3BAF008CF23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CEEB2B582C6A3E59008CF23A /* Draws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draws.swift; sourceTree = "<group>"; };
+		CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelSuccessTests.swift; sourceTree = "<group>"; };
+		CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelFailureTests.swift; sourceTree = "<group>"; };
+		CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
+		CEEB2B692C6A42A3008CF23A /* MyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketView.swift; sourceTree = "<group>"; };
+		CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B702C6A5945008CF23A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelTests.swift; sourceTree = "<group>"; };
+		CEEB2B782C6A6062008CF23A /* DrawDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailView.swift; sourceTree = "<group>"; };
+		CEEB2B7A2C6A610B008CF23A /* DrawDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B7C2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B7E2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B802C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B822C6A63ED008CF23A /* DrawDetailContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerView.swift; sourceTree = "<group>"; };
+		CEEB2B852C6A65DF008CF23A /* DrawsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsTests.swift; sourceTree = "<group>"; };
+		CEEB2B882C6A6624008CF23A /* DrawDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		CEEB2B8A2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawDetailContainerViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEB2B022C6A2B58008CF23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB2B122C6A2B59008CF23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB2B1C2C6A2B59008CF23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEB2AFC2C6A2B58008CF23A = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B072C6A2B58008CF23A /* Mkodo-Lottery-App */,
+				CEEB2B182C6A2B59008CF23A /* Mkodo-Lottery-AppTests */,
+				CEEB2B222C6A2B59008CF23A /* Mkodo-Lottery-AppUITests */,
+				CEEB2B062C6A2B58008CF23A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEB2B062C6A2B58008CF23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B052C6A2B58008CF23A /* Mkodo-Lottery-App.app */,
+				CEEB2B152C6A2B59008CF23A /* Mkodo-Lottery-AppTests.xctest */,
+				CEEB2B1F2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEB2B072C6A2B58008CF23A /* Mkodo-Lottery-App */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B342C6A2DA3008CF23A /* Modules */,
+				CEEB2B332C6A2D8A008CF23A /* Core */,
+				CEEB2B322C6A2D78008CF23A /* App */,
+				CEEB2B6F2C6A5926008CF23A /* Extensions */,
+				CEEB2B572C6A3C1E008CF23A /* Resources */,
+				CEEB2B0E2C6A2B59008CF23A /* Preview Content */,
+			);
+			path = "Mkodo-Lottery-App";
+			sourceTree = "<group>";
+		};
+		CEEB2B0E2C6A2B59008CF23A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B0F2C6A2B59008CF23A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEEB2B182C6A2B59008CF23A /* Mkodo-Lottery-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B872C6A660C008CF23A /* DrawDetails */,
+				CEEB2B842C6A65A2008CF23A /* MyTickets */,
+				CEEB2B622C6A40F3008CF23A /* LotteryDraws */,
+				CEEB2B5D2C6A4041008CF23A /* IntegrationTests */,
+				CEEB2B5A2C6A400F008CF23A /* Mocks */,
+			);
+			path = "Mkodo-Lottery-AppTests";
+			sourceTree = "<group>";
+		};
+		CEEB2B222C6A2B59008CF23A /* Mkodo-Lottery-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B232C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift */,
+				CEEB2B252C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift */,
+			);
+			path = "Mkodo-Lottery-AppUITests";
+			sourceTree = "<group>";
+		};
+		CEEB2B322C6A2D78008CF23A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B082C6A2B58008CF23A /* MkodoLotteryAppApp.swift */,
+				CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEEB2B332C6A2D8A008CF23A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B4C2C6A3A20008CF23A /* Networks */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEEB2B342C6A2DA3008CF23A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B652C6A4267008CF23A /* MyTickets */,
+				CEEB2B742C6A6009008CF23A /* DrawDetails */,
+				CEEB2B3D2C6A35F9008CF23A /* LotteryDraws */,
+				CEEB2B352C6A3031008CF23A /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CEEB2B352C6A3031008CF23A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B362C6A3044008CF23A /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEEB2B362C6A3044008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B372C6A3054008CF23A /* HomeView.swift */,
+				CEEB2B3B2C6A3226008CF23A /* TileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B3D2C6A35F9008CF23A /* LotteryDraws */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B472C6A3772008CF23A /* Models */,
+				CEEB2B422C6A36FD008CF23A /* Interfaces */,
+				CEEB2B412C6A36F3008CF23A /* ViewModels */,
+				CEEB2B3E2C6A3608008CF23A /* Views */,
+			);
+			path = LotteryDraws;
+			sourceTree = "<group>";
+		};
+		CEEB2B3E2C6A3608008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B3F2C6A361F008CF23A /* DrawListView.swift */,
+				CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B412C6A36F3008CF23A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B432C6A3708008CF23A /* DrawsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEB2B422C6A36FD008CF23A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEEB2B472C6A3772008CF23A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B482C6A377B008CF23A /* Draw.swift */,
+				CEEB2B582C6A3E59008CF23A /* Draws.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEEB2B4C2C6A3A20008CF23A /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B4D2C6A3A29008CF23A /* API */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		CEEB2B4D2C6A3A29008CF23A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */,
+				CEEB2B502C6A3A5B008CF23A /* Request.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CEEB2B572C6A3C1E008CF23A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */,
+				CEEB2B562C6A3BAF008CF23A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEEB2B5A2C6A400F008CF23A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CEEB2B5D2C6A4041008CF23A /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		CEEB2B622C6A40F3008CF23A /* LotteryDraws */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */,
+				CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */,
+				CEEB2B852C6A65DF008CF23A /* DrawsTests.swift */,
+			);
+			path = LotteryDraws;
+			sourceTree = "<group>";
+		};
+		CEEB2B652C6A4267008CF23A /* MyTickets */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B682C6A4280008CF23A /* Interfaces */,
+				CEEB2B672C6A4278008CF23A /* ViewModels */,
+				CEEB2B662C6A4271008CF23A /* Views */,
+			);
+			path = MyTickets;
+			sourceTree = "<group>";
+		};
+		CEEB2B662C6A4271008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B692C6A42A3008CF23A /* MyTicketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B672C6A4278008CF23A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEB2B682C6A4280008CF23A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEEB2B6F2C6A5926008CF23A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B702C6A5945008CF23A /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEEB2B742C6A6009008CF23A /* DrawDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B772C6A6032008CF23A /* Interfaces */,
+				CEEB2B762C6A602A008CF23A /* ViewModels */,
+				CEEB2B752C6A6022008CF23A /* Views */,
+			);
+			path = DrawDetails;
+			sourceTree = "<group>";
+		};
+		CEEB2B752C6A6022008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B782C6A6062008CF23A /* DrawDetailView.swift */,
+				CEEB2B822C6A63ED008CF23A /* DrawDetailContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B762C6A602A008CF23A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B7A2C6A610B008CF23A /* DrawDetailViewModel.swift */,
+				CEEB2B7E2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEB2B772C6A6032008CF23A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B7C2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift */,
+				CEEB2B802C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEEB2B842C6A65A2008CF23A /* MyTickets */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B722C6A5E46008CF23A /* MyTicketViewModelTests.swift */,
+			);
+			path = MyTickets;
+			sourceTree = "<group>";
+		};
+		CEEB2B872C6A660C008CF23A /* DrawDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B882C6A6624008CF23A /* DrawDetailsViewModelTests.swift */,
+				CEEB2B8A2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift */,
+			);
+			path = DrawDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEB2B042C6A2B58008CF23A /* Mkodo-Lottery-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEB2B292C6A2B59008CF23A /* Build configuration list for PBXNativeTarget "Mkodo-Lottery-App" */;
+			buildPhases = (
+				CEEB2B012C6A2B58008CF23A /* Sources */,
+				CEEB2B022C6A2B58008CF23A /* Frameworks */,
+				CEEB2B032C6A2B58008CF23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mkodo-Lottery-App";
+			productName = "Mkodo-Lottery-App";
+			productReference = CEEB2B052C6A2B58008CF23A /* Mkodo-Lottery-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEB2B142C6A2B59008CF23A /* Mkodo-Lottery-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEB2B2C2C6A2B59008CF23A /* Build configuration list for PBXNativeTarget "Mkodo-Lottery-AppTests" */;
+			buildPhases = (
+				CEEB2B112C6A2B59008CF23A /* Sources */,
+				CEEB2B122C6A2B59008CF23A /* Frameworks */,
+				CEEB2B132C6A2B59008CF23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEB2B172C6A2B59008CF23A /* PBXTargetDependency */,
+			);
+			name = "Mkodo-Lottery-AppTests";
+			productName = "Mkodo-Lottery-AppTests";
+			productReference = CEEB2B152C6A2B59008CF23A /* Mkodo-Lottery-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEB2B1E2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEB2B2F2C6A2B59008CF23A /* Build configuration list for PBXNativeTarget "Mkodo-Lottery-AppUITests" */;
+			buildPhases = (
+				CEEB2B1B2C6A2B59008CF23A /* Sources */,
+				CEEB2B1C2C6A2B59008CF23A /* Frameworks */,
+				CEEB2B1D2C6A2B59008CF23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEB2B212C6A2B59008CF23A /* PBXTargetDependency */,
+			);
+			name = "Mkodo-Lottery-AppUITests";
+			productName = "Mkodo-Lottery-AppUITests";
+			productReference = CEEB2B1F2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEB2AFD2C6A2B58008CF23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CEEB2B042C6A2B58008CF23A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CEEB2B142C6A2B59008CF23A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CEEB2B042C6A2B58008CF23A;
+					};
+					CEEB2B1E2C6A2B59008CF23A = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CEEB2B042C6A2B58008CF23A;
+					};
+				};
+			};
+			buildConfigurationList = CEEB2B002C6A2B58008CF23A /* Build configuration list for PBXProject "Mkodo-Lottery-App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEB2AFC2C6A2B58008CF23A;
+			productRefGroup = CEEB2B062C6A2B58008CF23A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEB2B042C6A2B58008CF23A /* Mkodo-Lottery-App */,
+				CEEB2B142C6A2B59008CF23A /* Mkodo-Lottery-AppTests */,
+				CEEB2B1E2C6A2B59008CF23A /* Mkodo-Lottery-AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEB2B032C6A2B58008CF23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEB2B102C6A2B59008CF23A /* Preview Assets.xcassets in Resources */,
+				CEEB2B542C6A3BAF008CF23A /* Localizable.strings in Resources */,
+				CEEB2B0D2C6A2B59008CF23A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB2B132C6A2B59008CF23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB2B1D2C6A2B59008CF23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEB2B012C6A2B58008CF23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */,
+				CEEB2B7B2C6A610B008CF23A /* DrawDetailViewModel.swift in Sources */,
+				CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */,
+				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
+				CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */,
+				CEEB2B832C6A63ED008CF23A /* DrawDetailContainerView.swift in Sources */,
+				CEEB2B7F2C6A63C0008CF23A /* DrawDetailContainerViewModel.swift in Sources */,
+				CEEB2B812C6A63D4008CF23A /* DrawDetailContainerViewModelProtocol.swift in Sources */,
+				CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */,
+				CEEB2B7D2C6A6247008CF23A /* DrawDetailViewModelProtocol.swift in Sources */,
+				CEEB2B6A2C6A42A3008CF23A /* MyTicketView.swift in Sources */,
+				CEEB2B792C6A6062008CF23A /* DrawDetailView.swift in Sources */,
+				CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */,
+				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
+				CEEB2B6C2C6A430D008CF23A /* MyTicketViewModel.swift in Sources */,
+				CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */,
+				CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */,
+				CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */,
+				CEEB2B3C2C6A3226008CF23A /* TileView.swift in Sources */,
+				CEEB2B442C6A3708008CF23A /* DrawsViewModel.swift in Sources */,
+				CEEB2B4B2C6A3865008CF23A /* DrawItemView.swift in Sources */,
+				CEEB2B092C6A2B58008CF23A /* MkodoLotteryAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB2B112C6A2B59008CF23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEB2B642C6A413C008CF23A /* APIManagerTests.swift in Sources */,
+				CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */,
+				CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */,
+				CEEB2B862C6A65DF008CF23A /* DrawsTests.swift in Sources */,
+				CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */,
+				CEEB2B8B2C6A6655008CF23A /* DrawDetailContainerViewModelTests.swift in Sources */,
+				CEEB2B732C6A5E46008CF23A /* MyTicketViewModelTests.swift in Sources */,
+				CEEB2B892C6A6624008CF23A /* DrawDetailsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEB2B1B2C6A2B59008CF23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEB2B242C6A2B59008CF23A /* Mkodo_Lottery_AppUITests.swift in Sources */,
+				CEEB2B262C6A2B59008CF23A /* Mkodo_Lottery_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEB2B172C6A2B59008CF23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEB2B042C6A2B58008CF23A /* Mkodo-Lottery-App */;
+			targetProxy = CEEB2B162C6A2B59008CF23A /* PBXContainerItemProxy */;
+		};
+		CEEB2B212C6A2B59008CF23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEB2B042C6A2B58008CF23A /* Mkodo-Lottery-App */;
+			targetProxy = CEEB2B202C6A2B59008CF23A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEB2B562C6A3BAF008CF23A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEB2B552C6A3BAF008CF23A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEB2B272C6A2B59008CF23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEB2B282C6A2B59008CF23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEB2B2A2C6A2B59008CF23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mkodo-Lottery-App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SRE842CL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.codeexceptional.Mkodo-Lottery-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEB2B2B2C6A2B59008CF23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mkodo-Lottery-App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SRE842CL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.codeexceptional.Mkodo-Lottery-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEB2B2D2C6A2B59008CF23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SRE842CL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.codeexceptional.Mkodo-Lottery-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mkodo-Lottery-App.app/Mkodo-Lottery-App";
+			};
+			name = Debug;
+		};
+		CEEB2B2E2C6A2B59008CF23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SRE842CL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.codeexceptional.Mkodo-Lottery-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mkodo-Lottery-App.app/Mkodo-Lottery-App";
+			};
+			name = Release;
+		};
+		CEEB2B302C6A2B59008CF23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SRE842CL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.codeexceptional.Mkodo-Lottery-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mkodo-Lottery-App";
+			};
+			name = Debug;
+		};
+		CEEB2B312C6A2B59008CF23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SRE842CL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.codeexceptional.Mkodo-Lottery-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mkodo-Lottery-App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEB2B002C6A2B58008CF23A /* Build configuration list for PBXProject "Mkodo-Lottery-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEB2B272C6A2B59008CF23A /* Debug */,
+				CEEB2B282C6A2B59008CF23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEB2B292C6A2B59008CF23A /* Build configuration list for PBXNativeTarget "Mkodo-Lottery-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEB2B2A2C6A2B59008CF23A /* Debug */,
+				CEEB2B2B2C6A2B59008CF23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEB2B2C2C6A2B59008CF23A /* Build configuration list for PBXNativeTarget "Mkodo-Lottery-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEB2B2D2C6A2B59008CF23A /* Debug */,
+				CEEB2B2E2C6A2B59008CF23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEB2B2F2C6A2B59008CF23A /* Build configuration list for PBXNativeTarget "Mkodo-Lottery-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEB2B302C6A2B59008CF23A /* Debug */,
+				CEEB2B312C6A2B59008CF23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEB2AFD2C6A2B58008CF23A /* Project object */;
+}
