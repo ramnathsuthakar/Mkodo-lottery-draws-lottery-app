@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Mkodo-Lottery-App
+
+  Created by Ramanath Suthakar on 12/08/2024.
+  
+*/
+
+/**
+ *  Context: Title of the top movies screen
+ *  Max characters: 40
+ */
+"nav.greeting" = "Welcome back";

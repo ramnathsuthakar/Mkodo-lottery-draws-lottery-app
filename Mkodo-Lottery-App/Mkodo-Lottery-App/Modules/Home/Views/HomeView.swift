@@ -16,7 +16,7 @@ struct HomeView: View {
         VStack(spacing: 20) {
             HStack {
                 Spacer()
-                Text("Welcome back")
+                Text(LocalizedStringKey("nav.greeting"))
                     .font(.subheadline)
                     .fontWeight(.bold)
                 Spacer()

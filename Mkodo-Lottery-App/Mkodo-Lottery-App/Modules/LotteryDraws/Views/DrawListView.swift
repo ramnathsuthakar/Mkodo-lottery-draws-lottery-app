@@ -22,7 +22,7 @@ struct DrawListView: View {
                         .foregroundColor(.primary)
                 }
                 Spacer()
-                Text("Welcome back")
+                Text(LocalizedStringKey("nav.greeting"))
                     .font(.title3)
                     .fontWeight(.bold)
                 Spacer()

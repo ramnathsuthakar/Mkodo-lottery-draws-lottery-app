@@ -21,6 +21,9 @@
 		CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */; };
 		CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B482C6A377B008CF23A /* Draw.swift */; };
 		CEEB2B4B2C6A3865008CF23A /* DrawItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */; };
+		CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */; };
+		CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B502C6A3A5B008CF23A /* Request.swift */; };
+		CEEB2B542C6A3BAF008CF23A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B562C6A3BAF008CF23A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelProtocol.swift; sourceTree = "<group>"; };
 		CEEB2B482C6A377B008CF23A /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 		CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawItemView.swift; sourceTree = "<group>"; };
+		CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CEEB2B502C6A3A5B008CF23A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CEEB2B552C6A3BAF008CF23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,7 @@
 				CEEB2B342C6A2DA3008CF23A /* Modules */,
 				CEEB2B332C6A2D8A008CF23A /* Core */,
 				CEEB2B322C6A2D78008CF23A /* App */,
-				CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */,
+				CEEB2B572C6A3C1E008CF23A /* Resources */,
 				CEEB2B0E2C6A2B59008CF23A /* Preview Content */,
 			);
 			path = "Mkodo-Lottery-App";
@@ -154,6 +160,7 @@
 		CEEB2B332C6A2D8A008CF23A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CEEB2B4C2C6A3A20008CF23A /* Networks */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -226,6 +233,32 @@
 				CEEB2B482C6A377B008CF23A /* Draw.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CEEB2B4C2C6A3A20008CF23A /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B4D2C6A3A29008CF23A /* API */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		CEEB2B4D2C6A3A29008CF23A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */,
+				CEEB2B502C6A3A5B008CF23A /* Request.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CEEB2B572C6A3C1E008CF23A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B0C2C6A2B59008CF23A /* Assets.xcassets */,
+				CEEB2B562C6A3BAF008CF23A /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEB2B102C6A2B59008CF23A /* Preview Assets.xcassets in Resources */,
+				CEEB2B542C6A3BAF008CF23A /* Localizable.strings in Resources */,
 				CEEB2B0D2C6A2B59008CF23A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +394,9 @@
 			files = (
 				CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */,
 				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
+				CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */,
 				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
+				CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */,
 				CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */,
 				CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */,
 				CEEB2B3C2C6A3226008CF23A /* TileView.swift in Sources */,
@@ -401,6 +437,17 @@
 			targetProxy = CEEB2B202C6A2B59008CF23A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEB2B562C6A3BAF008CF23A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEB2B552C6A3BAF008CF23A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CEEB2B272C6A2B59008CF23A /* Debug */ = {
