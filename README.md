@@ -7,7 +7,7 @@
 * [Features](#Features) 
 * [Screens](#Screens)
 * [Services](#Services)
-* [Next Steps](#Next Steps)
+* [Next Steps](#Next_Steps)
 
 
 ## Getting Started
@@ -32,7 +32,7 @@ No dependencies in use
 
 **Lottery Draws:**
 
-![Image Alt text](/images/Lottery-Draws "Lottery Draws") 
+![Image Alt text](/images/Lottery-Draws.png "Lottery Draws") 
 
 
 **Lottery Draw Details:**
