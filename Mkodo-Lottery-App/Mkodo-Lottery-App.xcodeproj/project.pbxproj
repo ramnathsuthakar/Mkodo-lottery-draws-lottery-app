@@ -27,6 +27,7 @@
 		CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */; };
 		CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */; };
 		CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */; };
+		CEEB2B642C6A413C008CF23A /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CEEB2B5B2C6A4021008CF23A /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
 		CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelSuccessTests.swift; sourceTree = "<group>"; };
 		CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelFailureTests.swift; sourceTree = "<group>"; };
+		CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 		CEEB2B5D2C6A4041008CF23A /* IntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */,
 			);
 			path = IntegrationTests;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEB2B642C6A413C008CF23A /* APIManagerTests.swift in Sources */,
 				CEEB2B5C2C6A4021008CF23A /* MockAPIManager.swift in Sources */,
 				CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */,
 				CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */,
