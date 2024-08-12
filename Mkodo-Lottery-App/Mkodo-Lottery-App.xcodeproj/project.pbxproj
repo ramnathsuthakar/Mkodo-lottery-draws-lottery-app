@@ -24,6 +24,7 @@
 		CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */; };
 		CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B502C6A3A5B008CF23A /* Request.swift */; };
 		CEEB2B542C6A3BAF008CF23A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEEB2B562C6A3BAF008CF23A /* Localizable.strings */; };
+		CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B582C6A3E59008CF23A /* Draws.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		CEEB2B4E2C6A3A3E008CF23A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CEEB2B502C6A3A5B008CF23A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CEEB2B552C6A3BAF008CF23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CEEB2B582C6A3E59008CF23A /* Draws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draws.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEB2B482C6A377B008CF23A /* Draw.swift */,
+				CEEB2B582C6A3E59008CF23A /* Draws.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */,
 				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
 				CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */,
+				CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */,
 				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
 				CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */,
 				CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */,

@@ -20,8 +20,7 @@ extension URL {
     }
     
     init<Value>(_ host: String, _ apiKey: String, _ request: Request<Value>) {
-        let queryItems = [ ("api_key", apiKey) ]
-            .map { name, value in URLQueryItem(name: name, value: "\(value)") }
+        let queryItems = [ URLQueryItem(name: "api_key", value: "\(apiKey)") ]
         
         let url = URL(string: host)!
             .appendingPathComponent(request.path)

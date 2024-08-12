@@ -37,3 +37,11 @@ struct DrawsResponse: Codable {
     let draws: [Draw]
 }
 
+// MARK: - Extension (Request)
+
+extension Draw {
+    static func drawDetails() -> Request<Draws<Draw>> {
+        return Request(method: .get, path: "/mock/v2/lotteryDraws")
+    }
+}
+
