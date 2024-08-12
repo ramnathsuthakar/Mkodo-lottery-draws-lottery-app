@@ -13,6 +13,7 @@ class AppCoordinator: ObservableObject {
     enum AppView {
         case home
         case drawDetails
+        case myTickets
     }
     
     func navigate(to view: AppView) {

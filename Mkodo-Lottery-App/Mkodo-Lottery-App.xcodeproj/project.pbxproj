@@ -28,6 +28,10 @@
 		CEEB2B5F2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */; };
 		CEEB2B612C6A40DB008CF23A /* DrawsViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */; };
 		CEEB2B642C6A413C008CF23A /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */; };
+		CEEB2B6A2C6A42A3008CF23A /* MyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B692C6A42A3008CF23A /* MyTicketView.swift */; };
+		CEEB2B6C2C6A430D008CF23A /* MyTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */; };
+		CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */; };
+		CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B702C6A5945008CF23A /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		CEEB2B5E2C6A407D008CF23A /* DrawsViewModelSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelSuccessTests.swift; sourceTree = "<group>"; };
 		CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelFailureTests.swift; sourceTree = "<group>"; };
 		CEEB2B632C6A413C008CF23A /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
+		CEEB2B692C6A42A3008CF23A /* MyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketView.swift; sourceTree = "<group>"; };
+		CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B702C6A5945008CF23A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 				CEEB2B342C6A2DA3008CF23A /* Modules */,
 				CEEB2B332C6A2D8A008CF23A /* Core */,
 				CEEB2B322C6A2D78008CF23A /* App */,
+				CEEB2B6F2C6A5926008CF23A /* Extensions */,
 				CEEB2B572C6A3C1E008CF23A /* Resources */,
 				CEEB2B0E2C6A2B59008CF23A /* Preview Content */,
 			);
@@ -178,6 +187,7 @@
 		CEEB2B342C6A2DA3008CF23A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEEB2B652C6A4267008CF23A /* MyTickets */,
 				CEEB2B3D2C6A35F9008CF23A /* LotteryDraws */,
 				CEEB2B352C6A3031008CF23A /* Home */,
 			);
@@ -295,6 +305,48 @@
 				CEEB2B602C6A40DB008CF23A /* DrawsViewModelFailureTests.swift */,
 			);
 			path = LotteryDraws;
+			sourceTree = "<group>";
+		};
+		CEEB2B652C6A4267008CF23A /* MyTickets */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B682C6A4280008CF23A /* Interfaces */,
+				CEEB2B672C6A4278008CF23A /* ViewModels */,
+				CEEB2B662C6A4271008CF23A /* Views */,
+			);
+			path = MyTickets;
+			sourceTree = "<group>";
+		};
+		CEEB2B662C6A4271008CF23A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B692C6A42A3008CF23A /* MyTicketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B672C6A4278008CF23A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B6B2C6A430D008CF23A /* MyTicketViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEB2B682C6A4280008CF23A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B6D2C6A4328008CF23A /* MyTicketViewModelProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEEB2B6F2C6A5926008CF23A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B702C6A5945008CF23A /* String+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,11 +480,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEB2B6E2C6A4328008CF23A /* MyTicketViewModelProtocol.swift in Sources */,
 				CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */,
 				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
+				CEEB2B712C6A5945008CF23A /* String+Extensions.swift in Sources */,
 				CEEB2B4F2C6A3A3E008CF23A /* APIManager.swift in Sources */,
+				CEEB2B6A2C6A42A3008CF23A /* MyTicketView.swift in Sources */,
 				CEEB2B592C6A3E59008CF23A /* Draws.swift in Sources */,
 				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
+				CEEB2B6C2C6A430D008CF23A /* MyTicketViewModel.swift in Sources */,
 				CEEB2B512C6A3A5B008CF23A /* Request.swift in Sources */,
 				CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */,
 				CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */,

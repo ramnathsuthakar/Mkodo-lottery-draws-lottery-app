@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct HomeView: View {
     @ObservedObject var coordinator: AppCoordinator
 
@@ -28,8 +26,12 @@ struct HomeView: View {
             }
             .padding()
             
-            TileView(title: "Lottery Draws", subtitle: "Check our latest draws results", image: "lotteryDrawsImage") {
+            TileView(title: "home.lottery.draws.title".localized, subtitle: "home.lottery.draws.description".localized, image: "lotteryDrawsImage") {
                 coordinator.navigate(to: .drawDetails)
+            }
+            
+            TileView(title: "home.my.tickets.title".localized, subtitle: "home.my.tickets.description".localized, image: "lotteryTicketImage") {
+                coordinator.navigate(to: .myTickets)
             }
 
             Spacer()
