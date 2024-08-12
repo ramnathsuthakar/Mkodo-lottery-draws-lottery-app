@@ -17,6 +17,10 @@
 		CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */; };
 		CEEB2B3C2C6A3226008CF23A /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B3B2C6A3226008CF23A /* TileView.swift */; };
 		CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B3F2C6A361F008CF23A /* DrawListView.swift */; };
+		CEEB2B442C6A3708008CF23A /* DrawsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B432C6A3708008CF23A /* DrawsViewModel.swift */; };
+		CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */; };
+		CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B482C6A377B008CF23A /* Draw.swift */; };
+		CEEB2B4B2C6A3865008CF23A /* DrawItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		CEEB2B392C6A3082008CF23A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CEEB2B3B2C6A3226008CF23A /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		CEEB2B3F2C6A361F008CF23A /* DrawListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawListView.swift; sourceTree = "<group>"; };
+		CEEB2B432C6A3708008CF23A /* DrawsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModel.swift; sourceTree = "<group>"; };
+		CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawsViewModelProtocol.swift; sourceTree = "<group>"; };
+		CEEB2B482C6A377B008CF23A /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +187,9 @@
 		CEEB2B3D2C6A35F9008CF23A /* LotteryDraws */ = {
 			isa = PBXGroup;
 			children = (
+				CEEB2B472C6A3772008CF23A /* Models */,
+				CEEB2B422C6A36FD008CF23A /* Interfaces */,
+				CEEB2B412C6A36F3008CF23A /* ViewModels */,
 				CEEB2B3E2C6A3608008CF23A /* Views */,
 			);
 			path = LotteryDraws;
@@ -188,8 +199,33 @@
 			isa = PBXGroup;
 			children = (
 				CEEB2B3F2C6A361F008CF23A /* DrawListView.swift */,
+				CEEB2B4A2C6A3865008CF23A /* DrawItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CEEB2B412C6A36F3008CF23A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B432C6A3708008CF23A /* DrawsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEEB2B422C6A36FD008CF23A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B452C6A3751008CF23A /* DrawsViewModelProtocol.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CEEB2B472C6A3772008CF23A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB2B482C6A377B008CF23A /* Draw.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +361,11 @@
 				CEEB2B402C6A361F008CF23A /* DrawListView.swift in Sources */,
 				CEEB2B3A2C6A3082008CF23A /* AppCoordinator.swift in Sources */,
 				CEEB2B382C6A3054008CF23A /* HomeView.swift in Sources */,
+				CEEB2B492C6A377B008CF23A /* Draw.swift in Sources */,
+				CEEB2B462C6A3751008CF23A /* DrawsViewModelProtocol.swift in Sources */,
 				CEEB2B3C2C6A3226008CF23A /* TileView.swift in Sources */,
+				CEEB2B442C6A3708008CF23A /* DrawsViewModel.swift in Sources */,
+				CEEB2B4B2C6A3865008CF23A /* DrawItemView.swift in Sources */,
 				CEEB2B092C6A2B58008CF23A /* MkodoLotteryAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

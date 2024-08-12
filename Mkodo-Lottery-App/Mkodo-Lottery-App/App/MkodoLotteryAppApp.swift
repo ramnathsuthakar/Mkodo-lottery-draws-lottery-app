@@ -18,7 +18,7 @@ struct MkodoLotteryAppApp: App {
                 case .home:
                     HomeView(coordinator: coordinator)
                 case .drawDetails:
-                    DrawListView(coordinator: coordinator)
+                    DrawListView(viewModel: DrawsViewModel(), coordinator: coordinator)
                 }
             }
         }
