@@ -47,9 +47,9 @@ No dependencies in use
 
 ## Services
 
-To mock the response, I have used https://app.raw-labs.com/ to build the following end point.
+To mock the response, I used https://app.raw-labs.com/ to build the following endpoint.
 
-lotteryDraws GET Endpoint: https://dev-gzx5z8onn5l9z3p.api.raw-labs.com/mock/v2/lotteryDraws
+lotteryDraws **GET** Endpoint: https://dev-gzx5z8onn5l9z3p.api.raw-labs.com/mock/v2/lotteryDraws
 
 
 ## Next Steps
